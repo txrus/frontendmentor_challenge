@@ -8,9 +8,20 @@
 body {
     background-color: var(--pm-cream);
 }
+h2 {
+    margin: 4px 0;
+}
+p {
+    margin: 10px 0;
+}
 .container {
     display: grid;
     place-items: center;
+}
+.image-product {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .card {
     width: 375px;
@@ -18,12 +29,29 @@ body {
     flex-direction: column;
     background-color: var(--n-white);
     margin: 30px 0;
-    padding: 20px 30px;   
+    /*padding: 20px 30px;*/ 
+    padding-bottom: 25px ; 
+    border-radius: 15px;
+     
+}
+.card-box {
+    padding: 0 20px;
+}
+.header-box {
+    margin-bottom: 20px;
+}
+.detail-box {
+    margin-bottom: 40px;
 }
 .cart-button {
     display: inline-block;
     background-color: green;
-    text-align: center;  
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+      
 }
 .cost-box {
     display: flex;
@@ -32,5 +60,6 @@ body {
     
 }
 .cost {
-    margin-left: 20px
+    margin-left: 20px;
+    text-decoration: line-through;
 }
