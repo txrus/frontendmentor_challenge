@@ -1,22 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat&family=Outfit:wght@200;400;700&display=swap');
+
 :root {
     --pm-dark-cyan: hsl(158, 36%, 37%);
     --pm-cream: hsl(30, 38%, 92%);
     --n-very-dark-blue: hsl(212, 21%, 14%);
     --n-dark-grayish-blue:  hsl(228, 12%, 48%);
     --n-white: hsl(0, 0%, 100%);
+    
 }
 body {
     background-color: var(--pm-cream);
+    height: 100vh;
 }
 h2 {
-    margin: 4px 0;
+    margin: -5px 0;
+}
+h3 {
+    font-family: 'Montserrat';
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: var(--n-dark-grayish-blue);
+    margin-top: 30px;
+
 }
 p {
     margin: 10px 0;
 }
 .container {
-    display: grid;
-    place-items: center;
+    /*display: grid;
+    place-items: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image-product {
     width: 100%;
@@ -38,28 +54,53 @@ p {
     padding: 0 20px;
 }
 .header-box {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
 }
 .detail-box {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--n-dark-grayish-blue)
 }
+    
 .cart-button {
-    display: inline-block;
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    background-color: var(--pm-dark-cyan);
     text-align: center;
     width: 100%;
-    padding: 15px 0;
+    padding: 20px 0;
     border-radius: 10px;
     margin-top: 20px;
-      
+    text-decoration: none;
+    color: white;
 }
+
+.cart-button span{
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 15px; 
+    
+}    
 .cost-box {
     display: flex;
     align-items: center;
-    color: blue;
-    
+    color: blue;    
+}
+.cost-box h2 {
+    font-family: 'Fraunces';
+    font-size: 40px;
+    color: var(--pm-dark-cyan)
 }
 .cost {
     margin-left: 20px;
     text-decoration: line-through;
+    font-family: 'Montserrat';
+    color: var(--n-dark-grayish-blue);
+    font-weight: 700;
 }
+
