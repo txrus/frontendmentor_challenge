@@ -1,6 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat&family=Outfit:wght@200;400;700&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 :root {
     --pm-dark-cyan: hsl(158, 36%, 37%);
     --pm-cream: hsl(30, 38%, 92%);
@@ -12,16 +59,21 @@
 body {
     background-color: var(--pm-cream);
     height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    
 }
 h2 {
-    margin: -5px 0;
+    margin: 2px 0;
+    font-size: 32px;
 }
 h3 {
     font-family: 'Montserrat';
     letter-spacing: 5px;
     font-size: 15px;
     color: var(--n-dark-grayish-blue);
-    margin-top: 30px;
+    margin: 30px 0;
 
 }
 p {
@@ -30,9 +82,8 @@ p {
 .container {
     /*display: grid;
     place-items: center;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 375px;
+    
 }
 .image-product {
     width: 100%;
@@ -45,8 +96,7 @@ p {
     flex-direction: column;
     background-color: var(--n-white);
     margin: 30px 0;
-    /*padding: 20px 30px;*/ 
-    padding-bottom: 25px ; 
+    /*padding: 20px 30px;*/  
     border-radius: 15px;
      
 }
@@ -54,13 +104,13 @@ p {
     padding: 0 20px;
 }
 .header-box {
-    margin-bottom: 25px;
+    margin-bottom: px;
     font-family: 'Fraunces', sans-serif;
     font-weight: bolder;
     font-size: 25px;
 }
 .detail-box {
-    margin-bottom: 60px;
+    margin:30px 0 60px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: var(--n-dark-grayish-blue)
@@ -103,4 +153,32 @@ p {
     color: var(--n-dark-grayish-blue);
     font-weight: 700;
 }
+/*@media (min-width: 400px){
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .card {
+        flex-direction: row;
+    }
+    .card-box {
+        background-color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .cart-button {
+        margin-bottom: 20px;
+    }
+    .image-product {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        
+    }
 
+*/
