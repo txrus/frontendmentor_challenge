@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100&display=swap");
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-very-dark-blue: hsl(234, 12%, 34%);
+  --neutral-grayish-blue: hsl(229, 6%, 66%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --fs-15: .9375rem;
+  --fh-15: .9375rem;
+  --ff-primary: 'Poppins', sans-serif;
+}
+
+@media (min-width: 80em) {
+  :root {
+    --fh-15: 2.2rem;
+  }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-15);
+  padding-top: 5rem;
+  text-align: center;
+  background-color: var(--neutral-very-light-gray);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 4rem;
+  min-width: 20rem;
+  max-width: 70rem;
+}
+
+.container__intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 80rem) {
+  .container__intro {
+    width: 55ch;
+  }
+}
+
+.container__intro__header {
+  font-size: var(--fh-15);
+  font-weight: 200;
+  color: var(--neutral-very-dark-blue);
+  margin-bottom: .8rem;
+}
+
+.container__intro__desc {
+  color: var(--neutral-grayish-blue);
+  margin-top: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  margin: 4rem auto;
+}
+
+.card {
+  text-align: start;
+}
+
+@media (min-width: 80em) {
+  .card__list {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    -ms-grid-columns: (24rem)[3];
+        grid-template-columns: repeat(3, 24rem);
+    -ms-grid-rows: 17rem 17rem;
+        grid-template-rows: 17rem 17rem;
+    gap: 2rem;
+  }
+}
+
+.card__item {
+  padding: 1.7rem;
+  background-color: white;
+  border-radius: .2rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(47, 93, 218, 0.1);
+          box-shadow: 0px 10px 10px rgba(47, 93, 218, 0.1);
+}
+
+.card__item:nth-child(1) {
+  border-top: 3px solid var(--primary-cyan);
+}
+
+.card__item:nth-child(2) {
+  border-top: 3px solid var(--primary-red);
+}
+
+.card__item:nth-child(3) {
+  border-top: 3px solid var(--primary-orange);
+}
+
+.card__item:nth-child(4) {
+  border-top: 3px solid var(--primary-blue);
+}
+
+@media (min-width: 80em) {
+  .card__item:nth-child(1) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -webkit-transform: translateY(-9rem);
+            transform: translateY(-9rem);
+  }
+  .card__item:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  .card__item:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .card__item:nth-child(4) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -webkit-transform: translateY(-9rem);
+            transform: translateY(-9rem);
+  }
+}
+
+.card__header {
+  color: var(--neutral-very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.card__desc {
+  line-height: 2;
+}
+
+.card__img {
+  margin-top: 2rem;
+  margin-left: 80%;
+}
+
+.b-text {
+  font-weight: 600;
+}
+
+.flow-content > * {
+  margin-bottom: 1.4rem;
+}
+
+@media (min-width: 80em) {
+  .flow-content > * {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

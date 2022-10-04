@@ -1,0 +1,13 @@
+.b-text {
+    font-weight: 600;
+    
+}
+
+.flow-content > * {
+    margin-bottom: 1.4rem;
+    @media (min-width: 80em) {
+        margin: 0;
+        
+    }
+
+}
